@@ -7,11 +7,144 @@
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
 
-  <p>Hello, world!</p>
+  <h1 id="title">Survey Form</h1>
+
+  <div id="form-box">
+
+    <p>Sign up for free enchiladas below.</p>
+
+    <!-- FORM -->
+    <form id="survey-form">
+
+      <!-- FULL NAME INPUT -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="name-label" for="name">
+            <span class="required-field">*</span> Name:
+          </label>
+        </div>
+        <div class="input-box">
+          <input autofocus required type="text" name="name" id="name" class="form-input" placeholder="Enter your name">
+        </div>
+      </div>
+
+      <!-- EMAIL INPUT -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="email-label" for="email">
+            <span class="required-field">*</span> Email:
+          </label>
+        </div>
+        <div class="input-box">
+          <input required type="email" name="email" id="email" class="form-input" placeholder="Enter your email">
+        </div>
+      </div>
+
+      <!-- AGE INPUT -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="number-label" for="age">
+            Age:
+          </label>
+        </div>
+        <div class="input-box">
+          <input type="number" name="age" id="number" min="1" max="120" class="form-input" placeholder="Enter your age">
+        </div>
+      </div>
+
+      <!-- FAVORITE INPUT -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="dropdown-label" for="favorite">
+            What is your favorite type of enchilada?
+          </label>
+        </div>
+        <div class="input-box">
+          <select id="dropdown" name="favorite" class="dropdown">
+            <option value="Beef">Beef</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Black Bean">Black Bean</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- TACOS -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="tacos" for="tacos">
+            Any love for tacos?
+          </label>
+        </div>
+        <div class="input-box">
+          <ul style="list-style: none;" class="list">
+            <li class="radio">
+              <input name="radio-buttons" value="1" type="radio" class="radioButtons"><label>Definitely</label>
+            </li>
+            <li class="radio">
+              <input name="radio-buttons" value="2" type="radio" class="radioButtons"><label>No</label>
+            </li>
+            <li class="radio">
+              <input name="radio-buttons" value="3" type="radio" class="radioButtons"><label>Hellllllll no</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INGREDIENTS -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="ingredients" for="ingredients">
+            Tell us what you like in your enchiladas:
+          </label>
+        </div>
+        <div class="input-box">
+          <ul style="list-style: none;" class="list">
+            <li class="checkbox">
+              <input name="prefer" value="1" type="checkbox" class="checkboxes"><label>Garlic</label>
+            </li>
+            <li class="checkbox">
+              <input name="prefer" value="2" type="checkbox" class="checkboxes"><label>Green onion</label>
+            </li>
+            <li class="checkbox">
+              <input name="prefer" value="3" type="checkbox" class="checkboxes"><label>Beans</label>
+            </li>
+            <li class="checkbox">
+              <input name="prefer" value="4" type="checkbox" class="checkboxes"><label>Tomatoes</label>
+            </li>
+            <li class="checkbox">
+              <input name="prefer" value="5" type="checkbox" class="checkboxes"><label>Cheese</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SUGGESTIONS -->
+      <div class="form-row">
+        <div class="form-label">
+          <label id="suggestions" for="suggestions">
+            Do you have any suggestions for our enchiladas?
+          </label>
+        </div>
+        <div class="input-box">
+          <textarea id="suggestions" class="suggestion-box" name="suggestions" placeholder="Enter your suggestions here..."></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+
+
+    </form>
+
+  </div>
 
 </body>
 

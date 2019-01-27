@@ -1,0 +1,108 @@
+html, body {
+  background-color: #04151f;
+  text-align: center;
+  font-family: helvetica;
+  color: white;
+}
+
+#title {
+  font-size: 3em;
+  margin: 20px;
+}
+
+#form-box {
+  background-color: #033860;
+  border-radius: 0.5em;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.form-label {
+  display: inline-block;
+  text-align: right;
+  width: 45%;
+  padding: 0.5em;
+  vertical-align: middle;
+}
+
+.input-box {
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+  padding: 0.5em;
+  vertical-align: middle;
+}
+
+.required-field {
+  color: red;
+}
+
+.form-input {
+  width: 60%
+}
+
+.dropdown {
+  height: 3em;
+  width: 15em;
+  padding: 0.5em;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.suggestion-box {
+  resize: vertical;
+  width: 80%
+}
+
+#submit {
+  background-color: #8cd790;
+  cursor: pointer;
+  border-radius: 0.25em;
+  color: black;
+  font-size: 1em;
+  height: 2.5em;
+  width: 8em;
+  margin: 1em;
+  border: 0px solid;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background-color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 520px) {
+  #title {
+    font-size: 2em;
+  }
+  .form-label{
+    width: 80%;
+    text-align: left;
+  }
+  .input-box {
+    width: 80%;
+    text-align: center;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .list {
+    text-align: left;
+  }
+  .suggestion-box {
+    width: 100%;
+  }
+
+
+}
